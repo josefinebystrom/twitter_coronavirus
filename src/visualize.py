@@ -15,7 +15,6 @@ import os
 import json
 from collections import Counter,defaultdict
 import matplotlib.pyplot as plt
-import numpy as np
 
 # open the input path
 with open(args.input_path) as f:
@@ -32,20 +31,19 @@ for k,v in items:
     print(k,':',v)
 
 #create bar graph
-keys = [item[0] for item in items[:10]]
-values = [item[1] for item in items[:10]]
-keys.reverse()
-values.reverse()
-plt.bar(sorted(keys), values)
+top_items = items[:10] 
+keys = [item[0] for item in top_items]
+values = [item[1] for item in top_items]
+keys = keys[::-1]
+values = values[::-1]
+plt.bar(range(len(keys)), values)
+plt.xticks(range(len(keys)), keys)
 plt.ylabel("Number of Tweets")
 if args.input_path[-1] == 'g':
     plt.title("The Top 10 Languages that tweeted" + args.key[1:] + "in 2020")
     plt.xlabel("Language")
     plt.savefig(args.key[1:] + '_lang.png')
-elif args.input_path == 'country':
+else:
     plt.title("The Top 10 Countries that tweeted" + args.key[1:] + "in 2020")
     plt.xlabel("Country")
     plt.savefig(args.key[1:] + '_country.png')
-else:
-    plt.xlabel("Unknown Key")
-    plt.savefig(args.key[1:] + '_unknown.png')
