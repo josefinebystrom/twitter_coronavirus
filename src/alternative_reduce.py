@@ -38,7 +38,7 @@ for key in args.keys:
     x_axis = np.arange(len(y_axis))
     ax.plot(x_axis, y_axis, label = key)
 
-ax.set_title("Number of Tweets using " + str(args.keys)+ " in 2020")
+ax.set_title("Number of Tweets using " + str(args.keys)+ " in 2020", wrap = True)
 ax.set_ylabel("Number of Tweets Using Hashtag")
 ax.set_xlabel("Days passed in 2020")
 plt.legend()
