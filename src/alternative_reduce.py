@@ -5,7 +5,7 @@ matplotlib.use('Agg')
 # command line args
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('--keys', nargs='+', required=True)
+parser.add_argument('-l', '--keys', nargs='+', required=True)
 args = parser.parse_args()
 
 # imports
