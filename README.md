@@ -43,13 +43,13 @@ This graph shows the number of tweets using #coronavirus in Korean written in th
 
 These graphs compare how often a hashtag was used on a given date in 2020. I picked hashtags that had similar meanings to analyze which was most common.
 
-<img src=hashtag_comparison_#coronavirus.png width=100%/>
+<img src=hashtag_comparison_coronavirus.png width=100%/>
 
-<img src=hashtag_comparison_#coronavirus_#corona.png width=100%/>
+<img src=hashtag_comparison_coronavirus_corona.png width=100%/>
 
-<img src=hashtag_comparison_#cough_#sneeze.png width=100%/>
+<img src=hashtag_comparison_cough_sneeze.png width=100%/>
 
-<img src=hashtag_comparison_#covid2019_#covid-2019_#covid19_#covid-19.png width=100%/>
+<img src=hashtag_comparison_covid2019_covid-2019_covid19_covid-19.png width=100%/>
 
 ## Conclusion
 
